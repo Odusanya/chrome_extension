@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+html {
+    -ms-text-size-adjust:62.5%;
+    -webkit-text-size-adjust:62.5%;
+    font-size: 62.5%;
+}
+
+.search {
+    margin: 2.2rem auto;
+    text-align: center;
+}
+
+.card-container {
+    width: 100%;
+    /*max-width: 960px;*/
+    display: inline-flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(250,250,250,0.8);
+    max-width: 960px;
+    /*max-height: 720px;*/
+    margin-top: 3%;
+    margin-left: 8.33%;
+    margin-right: 8.333%;
+    margin-bottom: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: auto;
+}
+
+.header-text {
+	font-family: 'Rubik', sans-serif;
+    color: #010103;
+    text-align: center;
+    font-size: 4.1rem;
+    /*opacity: 0.7;*/
+    font-weight: bold;
+    line-height: 1.4;
+    position: relative;
+    margin: 5rem auto;
+}
+
+
+.header-text span {
+  background: rgba(250,250,250,0.8);
+  padding: 0 0.8rem;
+  padding-left: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/*Add side lines to the header text*/
+/*.header-text:before {
+  background: #2c3e50;
+  opacity: 0.7;
+  content: "";
+  display: block;
+  height: 0.2rem;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+}
+
+.header-text:before {
+  left: 0;
+}*/
+.food__vote-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.food__vendor {
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-left: 0.3rem;
+    color: #404040;
+    font-size: 1.5rem;
+    opacity: 1;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
+    line-height: 1.3;    
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.food__vote {
+    display: inline-flex;
+}
+
+.food__user {
+    /*padding-top: 0.41rem;*/
+    /*padding-right: 1.8rem;*/
+    color: #404040;
+    opacity: 0.85;
+    float: right;
+    /*position: relative;*/
+    /*margin-left: 9rem;*/
+    /*flex-flow: row-wrap;
+	justify-content: space-between;*/
+}
+
+.food__vote--thumbsdown {
+    margin-left: 5px;
+}
+
+.vote {
+    display: inline-flex;
+}
+
+.food {
+    width: 30%;
+    min-width: 180px;
+    height: auto;
+    align-content: center;
+    /*overflow: hidden;*/
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+    border-radius: 5px;
+    /* 5px rounded corners */
+    margin-bottom: 5%;
+}
+
+/*.container {
+    width: 100%;
+    height: 70px;
+    padding-left: 1.0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    text-align: left;
+    line-height: 1.4rem;
+}
+*/
+
+/*.shit {
+    display: inline-flex;
+    position: relative;
+}*/
+/*:placeholder {
+    padding-left: 0px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+}*/
+
+
+/*.overlay {
+	width: 100%;
+	height: 50px;
+}
+*/
+
+.food:hover {
+    transition: 0.2s ease;
+    box-shadow: 0 .8rem 1.6rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+
+.food__img {
+    border-radius: 6px 6px 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.food__vote--thumbsup,
+.food__vote--thumbsdown {
+    /*margin: 7px 3px 5px auto;*/
+    /*display: block;*/
+    float: left;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.6rem;  
+}
+
+.food__vote--thumbsdown:hover {
+    /*width: 100%;
+    height: 100%;*/
+    color: #e74c3c;
+    opacity: 1;
+}
+
+.food__vote--thumbsup:hover {
+    /*width: 100%;
+    height: 100%;*/
+    color: #3498db;
+    opacity: 1;
+}
+
+.fa {
+    font-size: 1.6rem;
+}
+/*.food__vote--thumbsup:after {
+    color: red;
+}*/
+
+.food__img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    cursor: hand;
+}
+.food__img-overlay {
+    border-radius: 6px 6px 0 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: hand;
+}
+
+.food__img-overlay:hover {
+    border-radius: 6px 6px 0 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.search__text {
+    font-family: 'Rubik';
+    padding-left: 0;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.5;
+    border: none;
+    background-color: rgba(250,250,250,0.8);
+    border-bottom: solid 0.15rem rgba(42,62,80,0.3);
+    transition: 0.2s ease-in-out;
+}
+
+.search__text:focus {
+    font-family: 'Rubik';
+    font-weight: normal;
+    border: 50px;
+    /*outline-color: none;*/
+    outline-style: none;
+    /*outline-width: none;*/
+    /*width: 240px;*/
+    border-bottom: solid 0.15rem rgba(42,62,80,0.3);
+}
+
+.food__count {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.food__name, .food__by {
+    box-sizing: border-box;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
+    line-height: 1.1;
+    font-size: 1.5rem;
+}
+
+.food__by, .food__vendor {
+    margin-top: -0.4rem;
+    font-weight: normal;
+}
+
+.food__text-wrap {
+    box-sizing: border-box;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Open sans';
+    padding: 1.5rem;
+    background-color: rgba(249,249,249,0.5);
+
+}
+.food__name, .font__count {
+    font-weight: bolder;
+}
